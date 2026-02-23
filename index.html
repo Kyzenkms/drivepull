@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrivePull Pro | The Ultimate GDrive Importer for After Effects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4285F4;
+            --accent: #34A853;
+            --bg: #0a0a0c;
+            --text: #ffffff;
+            --muted: #88888b;
+            --card-bg: #16161a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Hero Section */
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: radial-gradient(circle at 50% 50%, rgba(66, 133, 244, 0.15) 0%, transparent 60%);
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 40px;
+            color: var(--primary);
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            font-weight: 800;
+            margin-bottom: 20px;
+            letter-spacing: -2px;
+            line-height: 0.95;
+            background: linear-gradient(to bottom, #fff, #888);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p.subtitle {
+            font-size: 1.2rem;
+            color: var(--muted);
+            max-width: 600px;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 16px 32px;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 100px;
+            font-weight: 600;
+            transition: transform 0.2s, background 0.2s;
+            box-shadow: 0 10px 30px rgba(66, 133, 244, 0.3);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            background: #5a95f5;
+        }
+
+        /* Features */
+        .features {
+            padding: 100px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: border-color 0.3s;
+        }
+
+        .feature-card:hover {
+            border-color: var(--primary);
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+
+        .feature-card p {
+            color: var(--muted);
+        }
+
+        /* Footer */
+        footer {
+            padding: 60px 20px;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--text);
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .glow {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: var(--primary);
+            filter: blur(150px);
+            opacity: 0.2;
+            z-index: -1;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="glow" style="top: 10%; right: 10%;"></div>
+    <div class="glow" style="bottom: 10%; left: 10%;"></div>
+
+    <header>
+        <div class="logo">DRIVEPULL PRO</div>
+        <h1>Import faster.<br>Create better.</h1>
+        <p class="subtitle">The ultimate asset browser for After Effects. Connect your Google Drive and import files
+            directly to your timeline in seconds.</p>
+        <a href="#" class="btn">Get DrivePull Pro</a>
+    </header>
+
+    <section class="features">
+        <div class="feature-card">
+            <h3>No More Downloads</h3>
+            <p>Skip the browser. Browse your Drive folders directly inside After Effects and import assets with a single
+                click.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Lightning Fast</h3>
+            <p>Optimized caching and individual quota management ensure you never hit a speed bump during your creative
+                flow.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Secure & Private</h3>
+            <p>Connect your own Google account securely. We never store or see your private data. Your files stay yours.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 DrivePull Pro by Kyzen. Developed for After Effects Professionals.</p>
+        <div style="margin-top: 20px;">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+        </div>
+    </footer>
+</body>
+
+</html>
